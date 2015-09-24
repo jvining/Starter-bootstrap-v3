@@ -12,20 +12,43 @@
 	<!-- Bootstrap CDN -->
 	<link href="http://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css" rel="stylesheet">
 	<link href="http://netdna.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
-	<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800" rel="stylesheet">
-	
-	<style>
- 		body {text-rendering:optimizeLegibility; background:#fbfbfb; padding-top: 70px;}
-		h1,h2,h3,h4,h5{font-weight:300;}
-		[class*="col-"]{font-family: 'Open Sans', 'Helvetica Neue', 'Helvetica', 'Arial', 'sans-serif'; color:#5f5f55;}
+	<link href='https://fonts.googleapis.com/css?family=Raleway:400,300,700,900,800,600,500,200,100' rel='stylesheet'>
+
+  	<style>
+		/*
+		  bootstrap-primary: #428bca;
+		  bootstrap-success: #5cb85c;
+		  bootstrap-info:    #5bc0de;
+		  bootstrap-warning: #f0ad4e;
+		  bootstrap-danger:  #d9534f;
+		*/
 		
-		.voffset  {margin-top: 2px;}   .voffset1 {margin-top: 5px;} 
+   		body {text-rendering:optimizeLegibility; background:#fbfbfb; padding-top:50px; font-family: 'Raleway', 'Helvetica Neue', 'Helvetica', 'Arial', 'sans-serif';}
+		h1,h2,h3,h4,h5{font-weight:300;}
+		[class*="col-"]{color:#666;}
+
+ 		.voffset  {margin-top: 2px;}   .voffset1 {margin-top: 5px;} 
 		.voffset2 {margin-top: 10px;}  .voffset3 {margin-top: 15px;} 
 		.voffset4 {margin-top: 30px;}  .voffset5 {margin-top: 40px;} 
 		.voffset6 {margin-top: 60px;}  .voffset7 {margin-top: 80px;} 
 		.voffset8 {margin-top: 100px;} .voffset9 {margin-top: 150px;} 
 
 		footer {margin: 50px 0;}
+  		
+		.nav .navbar-nav{float:right;}
+
+
+		/* col-xs-* */
+		@media only screen and (min-width :480px){.nav .navbar-nav{float:none!important;}}
+ 		/* col-xs-* */                            
+		@media only screen and (min-width :480px){}
+		/* col-sm-* */                            
+		@media only screen and (min-width :768px){}
+		/* col-md-* */                            
+		@media only screen and (min-width :992px){}
+		/* col-lg-* */
+		@media only screen and (min-width :1200px){}
+		
 	</style>
 
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
@@ -38,10 +61,10 @@
 </head>
 <body>
 
-     <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+    <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
         <div class="container">
             <div class="navbar-header">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-collapse">
                     <span class="sr-only">Toggle navigation</span>
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
@@ -49,7 +72,7 @@
                 </button>
                 <a class="navbar-brand" href="#">Starter Bootstrap Template</a>
             </div>
-            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <div class="collapse navbar-collapse" id="navbar-collapse">
                 <ul class="nav navbar-nav">
                     <li><a href="#">About</a></li>
                     <li><a href="#">Services</a></li>
@@ -58,16 +81,71 @@
             </div>
         </div>
     </nav>
-	
-	<div class="container">
+
+ 	<div class="container">
 		<div class="row">
-			<div class="col-xs-12">
-				<h1 class="page-header">Starter Bootstrap Template <small>Using CDN</small></h1>
-  			 </div>
+			<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+				<h1>Header Level 1</h1>
+				<h2>Header Level 2</h2>
+				<h3>Header Level 3</h3>
+				<h4>Header Level 4</h4>
+				<h5>Header Level 5</h5>
+				<hr/>
+				<h3>Paragraph Level Typography </h3>
+ 				<p>Lorem ipsum dolor sit amet, <strong>consectetuer adipiscing elit.Pellentesque</strong> habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor
+				sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo.Lorem ipsum dolor sit amet, consectetuer adipiscing elit.Pellentesque habitant morbi tristique senectus et
+				netus et malesuada fames <em>ac turpis egestas. Vestibulum tortor quam, feugiat vitae,</em> ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend
+				leo.Lorem ipsum dolor sit amet, consectetuer<code> adipiscing elit.Pellentesque habitant</code> morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor
+				sit amet, ante. Donec eu libero sit amet quam <a href="#">egestas semper. Aenean</a> ultricies mi vitae est. Mauris placerat eleifend leo.
+				Lorem ipsum dolor sit amet, <strong>consectetuer adipiscing elit.Pellentesque</strong> habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor
+				sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo.Lorem ipsum dolor sit amet, consectetuer adipiscing elit.Pellentesque habitant morbi tristique senectus et
+				netus et malesuada fames <em>ac turpis egestas. Vestibulum tortor quam, feugiat vitae,</em> ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend
+				leo.Lorem ipsum dolor sit amet, consectetuer<code> adipiscing elit.Pellentesque habitant</code> morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor
+				sit amet, ante. Donec eu libero sit amet quam <a href="#">egestas semper. Aenean</a> ultricies mi vitae est. Mauris placerat eleifend leo.</p>
+				<hr/>
+				<h3>Un-Ordered List Typography </h3>
+				<ul>
+				   <li>Lorem ipsum dolor sit amet.</li>
+				   <li>Consectetuer adipiscing elit.</li>
+				   <li>Pellentesque habitant morbi tristique senectus.</li>
+				   <li>Et netus et malesuada fames ac turpis.</li>
+				</ul>
+				<hr/>
+				<h3>Ordered List Typography </h3>
+				<ol>
+				   <li>Lorem ipsum dolor sit amet.</li>
+				   <li>Consectetuer adipiscing elit.</li>
+				   <li>Pellentesque habitant morbi tristique senectus.</li>
+				   <li>Et netus et malesuada fames ac turpis.</li>
+				</ol>
+				<hr/>
+				<h3>Blockquote Typography </h3>
+				<blockquote>
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus magna. Cras in mi at felis aliquet congue. Ut a est eget ligula molestie gravida. Curabitur massa. Donec eleifend, libero at sagittis mollis,.</p>
+					<cite>Lorem ipsum dolor sit amet</cite>
+				</blockquote>
+				<hr/>
+				<h3>Code Typography </h3>
+
+				<pre>
+					<code>
+						#header h1 a{display:block;width:300px;height:80px;}
+					</code>
+				</pre>
+			</div>
 		</div>
 	</div>
-	
- 
+
+	<footer>
+		<div class="container">
+	    	<div class="row">
+	        	<div class="col-lg-12">
+					<hr/>
+	            	<p>Copyright © Starter Bootstrap Template 2015</p>
+	        	</div>
+	    	</div>
+		</div>
+	</footer>
 
 <!-- JS -->
 <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js" type="text/javascript"></script>
