@@ -15,15 +15,9 @@
 	<link href='https://fonts.googleapis.com/css?family=Raleway:400,300,700,900,800,600,500,200,100' rel='stylesheet'>
 
   	<style>
-		/*
-		  bootstrap-primary: #428bca;
-		  bootstrap-success: #5cb85c;
-		  bootstrap-info:    #5bc0de;
-		  bootstrap-warning: #f0ad4e;
-		  bootstrap-danger:  #d9534f;
-		*/
 		
    		body {text-rendering:optimizeLegibility; background:#fbfbfb; padding-top:50px; font-family: 'Raleway', 'Helvetica Neue', 'Helvetica', 'Arial', 'sans-serif';}
+		body > .container{margin-top:20px;}
 		h1,h2,h3,h4,h5{font-weight:300;}
 		[class*="col-"]{color:#666;}
 
@@ -35,11 +29,8 @@
 
 		footer {margin: 50px 0;}
   		
-		.nav .navbar-nav{float:right;}
-
-
 		/* col-xs-* */
-		@media only screen and (min-width :480px){.nav .navbar-nav{float:none!important;}}
+		@media only screen and (min-width :320px){}
  		/* col-xs-* */                            
 		@media only screen and (min-width :480px){}
 		/* col-sm-* */                            
@@ -70,7 +61,7 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand" href="#">Starter Bootstrap Template</a>
+                <a class="navbar-brand" href="#"><strong>Starter Bootstrap Template</strong></a>
             </div>
             <div class="collapse navbar-collapse" id="navbar-collapse">
                 <ul class="nav navbar-nav">
@@ -84,7 +75,7 @@
 
  	<div class="container">
 		<div class="row">
-			<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+			<div class="col-xs-12">
 				<h1>Header Level 1</h1>
 				<h2>Header Level 2</h2>
 				<h3>Header Level 3</h3>
@@ -92,16 +83,20 @@
 				<h5>Header Level 5</h5>
 				<hr/>
 				<h3>Paragraph Level Typography </h3>
- 				<p>Lorem ipsum dolor sit amet, <strong>consectetuer adipiscing elit.Pellentesque</strong> habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor
-				sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo.Lorem ipsum dolor sit amet, consectetuer adipiscing elit.Pellentesque habitant morbi tristique senectus et
-				netus et malesuada fames <em>ac turpis egestas. Vestibulum tortor quam, feugiat vitae,</em> ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend
-				leo.Lorem ipsum dolor sit amet, consectetuer<code> adipiscing elit.Pellentesque habitant</code> morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor
-				sit amet, ante. Donec eu libero sit amet quam <a href="#">egestas semper. Aenean</a> ultricies mi vitae est. Mauris placerat eleifend leo.
-				Lorem ipsum dolor sit amet, <strong>consectetuer adipiscing elit.Pellentesque</strong> habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor
-				sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo.Lorem ipsum dolor sit amet, consectetuer adipiscing elit.Pellentesque habitant morbi tristique senectus et
-				netus et malesuada fames <em>ac turpis egestas. Vestibulum tortor quam, feugiat vitae,</em> ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend
-				leo.Lorem ipsum dolor sit amet, consectetuer<code> adipiscing elit.Pellentesque habitant</code> morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor
-				sit amet, ante. Donec eu libero sit amet quam <a href="#">egestas semper. Aenean</a> ultricies mi vitae est. Mauris placerat eleifend leo.</p>
+ 				<p>Lorem ipsum dolor sit amet, <strong>consectetuer adipiscing elit.Pellentesque</strong> habitant morbi tristique senectus et netus et malesuada fames ac turpis
+	 			egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est.
+	 			Mauris placerat eleifend leo.Lorem ipsum dolor sit amet, consectetuer adipiscing elit.Pellentesque habitant morbi tristique senectus e netus et malesuada fames
+	 			<em>ac turpis egestas. Vestibulum tortor quam, feugiat vitae,</em> ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean
+	 			ultricies mi vitae est. Mauris placerat eleifend leo.Lorem ipsum dolor sit amet, consectetuer<code> adipiscing elit.Pellentesque habitant</code> morbi tristique
+	 			senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam
+	 			<a href="#">egestas semper. Aenean</a> ultricies mi vitae est. Mauris placerat eleifend leo. Lorem ipsum dolor sit amet, <strong>consectetuer adipiscing
+		 		elit.Pellentesque</strong> habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget,
+		 		tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo.Lorem ipsum dolor sit amet,
+		 		consectetuer adipiscing elit.Pellentesque habitant morbi tristique senectus et netus et malesuada fames <em>ac turpis egestas. Vestibulum tortor quam, feugiat
+			 	vitae,</em> ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend 
+				leo.Lorem ipsum dolor sit amet, consectetuer<code> adipiscing elit.Pellentesque habitant</code> morbi tristique senectus et netus et malesuada fames ac turpis
+			 	egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam <a href="#">egestas semper. Aenean</a>
+			 	ultricies mi vitae est. Mauris placerat eleifend leo.</p>
 				<hr/>
 				<h3>Un-Ordered List Typography </h3>
 				<ul>
@@ -121,13 +116,13 @@
 				<hr/>
 				<h3>Blockquote Typography </h3>
 				<blockquote>
-					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus magna. Cras in mi at felis aliquet congue. Ut a est eget ligula molestie gravida. Curabitur massa. Donec eleifend, libero at sagittis mollis,.</p>
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus magna. Cras in mi at felis aliquet congue. Ut a est eget ligula molestie gravida. Curabitur
+					massa. Donec eleifend, libero at sagittis mollis,.</p>
 					<cite>Lorem ipsum dolor sit amet</cite>
 				</blockquote>
 				<hr/>
 				<h3>Code Typography </h3>
-
-				<pre>
+ 				<pre>
 					<code>
 						#header h1 a{display:block;width:300px;height:80px;}
 					</code>
@@ -139,7 +134,7 @@
 	<footer>
 		<div class="container">
 	    	<div class="row">
-	        	<div class="col-lg-12">
+	        	<div class="col-xs-12">
 					<hr/>
 	            	<p>Copyright © Starter Bootstrap Template 2015</p>
 	        	</div>
