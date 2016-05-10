@@ -11,10 +11,11 @@
 	<!-- Bootstrap CDN -->
 	<link href="http://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css" rel="stylesheet">
 	<link href="http://netdna.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
- 	<link href="http://fonts.googleapis.com/css?family=Open+Sans:300,400,700" rel='stylesheet' type='text/css'>
+	<link href="https://cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/4.0.1/ekko-lightbox.min.css" rel="stylesheet" type="text/css">
+ 	<link href="http://fonts.googleapis.com/css?family=Open+Sans:300,400,700" rel="stylesheet" type="text/css">
   	
   	<style>
- 		body{text-rendering:optimizeLegibility; background:#fbfbfb; padding-top:5em; font-family: 'Open Sans', 'Helvetica Neue', 'Helvetica', 'Arial', 'sans-serif';}
+ 		body{text-rendering:optimizeLegibility; background:#fbfbfb; padding-top:5em; font-family: "Open Sans", "Helvetica Neue", "Helvetica", "Arial", "sans-serif";}
 		body > .container{margin-top:20px;}
 		
 		h1,h2,h3,h4,h5{font-weight:300;}
@@ -39,6 +40,18 @@
 		@media only screen and (min-width :992px){}
 		/* col-lg-* */
 		@media only screen and (min-width :1200px){}
+
+		/* Ekko Lightbox Dark Theme */
+		.modal-backdrop.in{-webkit-opacity:0.95;-moz-opacity:0.95;opacity:0.95;background-color:#333333;}
+		.ekko-lightbox .modal-content{-webkit-box-shadow:none;-moz-box-shadow:none;box-shadow:none;-webkit-border-radius:0;-moz-border-radius:0;border-radius:0;border:none;background-color:transparent;}
+		.ekko-lightbox .modal-header{border:0;padding-left:0;padding-right:0;}
+		.ekko-lightbox .modal-header .close{-webkit-opacity:0.5;-moz-opacity:0.5;opacity:0.5;color:#fff;text-shadow:0;font-weight:100;margin-top:5px;}
+		.ekko-lightbox .modal-header .close:hover{-webkit-opacity:1;-moz-opacity:1;opacity:1;}
+		.ekko-lightbox .modal-header h4.modal-title{font-weight:100;color:#fff;padding:0;}
+		.ekko-lightbox .modal-body{padding:0;}
+		.ekko-lightbox .modal-footer{-webkit-opacity:0.9;-moz-opacity:0.9;opacity:0.9;border:0;color:#fff;font-weight:100;padding:0;}
+		.ekko-lightbox-nav-overlay a{-webkit-opacity:0.9;-moz-opacity:0.9;opacity:0.9;text-shadow:none;}
+		
  	</style>
 
     <!--[if lt IE 9]>
@@ -116,9 +129,35 @@
 						massa. Donec eleifend, libero at sagittis mollis,.</p>
 						<cite>Lorem ipsum dolor sit amet</cite>
 					</blockquote>
-			</div> <!-- END col-xs-12 -->
-		</div> <!-- END row -->
-	</div> <!-- END container -->
+			</div>
+		</div> 
+		<div class="row">
+			<div class="col-xs-12">
+				<h3 class="page-header">Gallery Plugin</h3>
+			</div>
+ 			<div class="col-md-3">
+				<a href="http://41.media.tumblr.com/f37ac708134914c471073e4c0b47328d/tumblr_mrn3dc10Wa1r1thfzo8_1280.jpg" data-toggle="lightbox" data-gallery="multiimages" data-title="People walking down stairs">
+				    <img src="http://41.media.tumblr.com/f37ac708134914c471073e4c0b47328d/tumblr_mrn3dc10Wa1r1thfzo8_1280.jpg" class="img-responsive">
+				</a>
+			</div>
+			<div class="col-md-3">
+				<a href="http://41.media.tumblr.com/838b44224e39c30cd43490deb11b919d/tumblr_mrn3dc10Wa1r1thfzo1_1280.jpg" data-toggle="lightbox" data-gallery="multiimages" data-title="Man getting wet">
+				    <img src="http://41.media.tumblr.com/838b44224e39c30cd43490deb11b919d/tumblr_mrn3dc10Wa1r1thfzo1_1280.jpg" class="img-responsive">
+				</a>
+			</div>
+			<div class="col-md-3">
+			    <a href="http://41.media.tumblr.com/e06a3513b0b36843f54bee99aeac689a/tumblr_mrn3dc10Wa1r1thfzo2_1280.jpg" data-toggle="lightbox" data-gallery="multiimages" data-title="Someone lost their dress">
+			        <img src="http://41.media.tumblr.com/e06a3513b0b36843f54bee99aeac689a/tumblr_mrn3dc10Wa1r1thfzo2_1280.jpg" class="img-responsive">
+			    </a>
+			</div>
+			<div class="col-md-3">
+            	<a href="http://41.media.tumblr.com/9d3e6a9c89a856a2ad0be3ab4ca598b2/tumblr_mrn3dc10Wa1r1thfzo4_1280.jpg" data-toggle="lightbox" data-gallery="multiimages" data-footer="Big ass waterfall - footer instead of title">
+		            <img src="http://41.media.tumblr.com/9d3e6a9c89a856a2ad0be3ab4ca598b2/tumblr_mrn3dc10Wa1r1thfzo4_1280.jpg" class="img-responsive">
+		        </a>
+			</div>
+ 		</div>
+	</div> 
+	<!-- END container -->
 
 	<footer>
 		<div class="container">
@@ -134,6 +173,12 @@
 <!-- JS -->
 <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js" type="text/javascript"></script>
 <script src="http://netdna.bootstrapcdn.com/bootstrap/3.1.0/js/bootstrap.min.js" type="text/javascript"></script>
-
+<script src="https://cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/4.0.1/ekko-lightbox.min.js" type="text/javascript"></script>
+<script>
+	$(document).delegate('*[data-toggle="lightbox"]', 'click', function(event) {
+	    event.preventDefault();
+	    $(this).ekkoLightbox();
+	}); 
+</script>
 </body>
 </html>
