@@ -6,20 +6,19 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<meta name="author" content="https://github.com/jvining">
-	<meta name="description" content=" An HTML Template using Bootstrap, Jquery, &amp; Google WebFonts. All Called in from CDNs, so this document is available for immediate use">
+	<meta name="description" content=" An HTML Template using Bootstrap, Jquery, Lightbox Bootstrap 3, &amp; Google WebFonts. All Called in from CDNs, so this document is available for immediate use">
 
 	<!-- Bootstrap CDN -->
-	<link href="http://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css" rel="stylesheet">
-	<link href="http://netdna.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
-	<link href="https://cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/4.0.1/ekko-lightbox.min.css" rel="stylesheet" type="text/css">
+	<link href="http://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css" rel="stylesheet" type="text/css">
+	<link href="http://netdna.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
  	<link href="http://fonts.googleapis.com/css?family=Open+Sans:300,400,700" rel="stylesheet" type="text/css">
   	
   	<style>
- 		body{text-rendering:optimizeLegibility; background:#fbfbfb; padding-top:5em; font-family: "Open Sans", "Helvetica Neue", "Helvetica", "Arial", "sans-serif";}
+ 		body{background:#fbfbfb; padding-top:5em; font-family: "Open Sans", "Helvetica Neue", "Helvetica", "Arial", "sans-serif";}
 		body > .container{margin-top:20px;}
 		
 		h1,h2,h3,h4,h5{font-weight:300;}
-		[class*="col-"]{color:#666;}
+		[class*="col-"]{color:#5f5f5f;}
 
 		.voffset{margin-top: .2em;}  .voffset0{margin-top: .5em}
 		.voffset1{margin-top: 1em;}  .voffset2{margin-top: 2em;} 
@@ -42,7 +41,7 @@
 		@media only screen and (min-width :1200px){}
 
 		/* Ekko Lightbox Dark Theme */
-		.modal-backdrop.in{-webkit-opacity:0.95;-moz-opacity:0.95;opacity:0.95;background-color:#333333;}
+		.modal-backdrop.in{-webkit-opacity:0.75;-moz-opacity:0.75;opacity:0.75;background-color:#000;}
 		.ekko-lightbox .modal-content{-webkit-box-shadow:none;-moz-box-shadow:none;box-shadow:none;-webkit-border-radius:0;-moz-border-radius:0;border-radius:0;border:none;background-color:transparent;}
 		.ekko-lightbox .modal-header{border:0;padding-left:0;padding-right:0;}
 		.ekko-lightbox .modal-header .close{-webkit-opacity:0.5;-moz-opacity:0.5;opacity:0.5;color:#fff;text-shadow:0;font-weight:100;margin-top:5px;}
@@ -91,7 +90,6 @@
 				<h3>Header Level 3</h3>
 				<h4>Header Level 4</h4>
 				<h5>Header Level 5</h5>
-				<hr/>
 				<h3 class="page-header">Paragraph Level Typography </h3>
 	 				<p>Lorem ipsum dolor sit amet, <strong>consectetuer adipiscing elit.Pellentesque</strong> habitant morbi tristique senectus et netus et malesuada fames ac turpis
 		 			Mauris placerat eleifend leo.Lorem ipsum dolor sit amet, consectetuer adipiscing elit.Pellentesque habitant morbi tristique senectus e netus et malesuada fames
@@ -99,7 +97,7 @@
 		 			ultricies mi vitae est. Mauris placerat eleifend leo.Lorem ipsum dolor sit amet, consectetuer<code> adipiscing elit.Pellentesque habitant</code> morbi tristique
 		 			senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam
 		 			<a>egestas semper. Aenean</a> ultricies mi vitae est. Mauris placerat eleifend leo. Lorem ipsum dolor sit amet, <strong>consectetuer adipiscing</strong></p>
-				<hr/>
+		
  				<h3 class="page-header">Buttons </h3>
 		 			<a class="btn btn-primary">btn-primary</a>
 					<a class="btn btn-default">btn-default</a>
@@ -107,27 +105,42 @@
 					<a class="btn btn-warning">btn-warning</a>
 					<a class="btn btn-success">btn-success</a>
 					<a class="btn btn-info">btn-danger</a>
-  				<h3 class="page-header">Un-Ordered List Typography </h3>
-					<ul>
-					   <li>Lorem ipsum dolor sit amet.</li>
-					   <li>Consectetuer adipiscing elit.</li>
-					   <li>Pellentesque habitant morbi tristique senectus.</li>
-					   <li>Et netus et malesuada fames ac turpis.</li>
-					</ul>
-				<hr/>
-				<h3 class="page-header">Ordered List Typography </h3>
-					<ol>
-					   <li>Lorem ipsum dolor sit amet.</li>
-					   <li>Consectetuer adipiscing elit.</li>
-					   <li>Pellentesque habitant morbi tristique senectus.</li>
-					   <li>Et netus et malesuada fames ac turpis.</li>
-					</ol>
-				<hr/>
+					
+				<div class="row">
+					<div class="col-md-4 col-sm-4 col-xs-12">
+		  				<h3 class="page-header">Un-Ordered List Typography </h3>
+						<ul>
+						   <li>Lorem ipsum dolor sit amet.</li>
+						   <li>Consectetuer adipiscing elit.</li>
+						   <li>Pellentesque habitant morbi tristique senectus.</li>
+						   <li>Et netus et malesuada fames ac turpis.</li>
+						</ul>
+					</div>
+					<div class="col-md-4 col-sm-4 col-xs-12">
+						<h3 class="page-header">Ordered List Typography </h3>
+					   	<ol>
+					      <li>Lorem ipsum dolor sit amet.</li>
+					      <li>Consectetuer adipiscing elit.</li>
+					      <li>Pellentesque habitant morbi tristique senectus.</li>
+					      <li>Et netus et malesuada fames ac turpis.</li>
+					   	</ol>
+					</div>
+					<div class="col-md-4 col-sm-4 col-xs-12">
+						<h3 class="page-header">Desc/Term List Typography </h3>
+						<dl>
+							<dt>Lorem ipsum dolor sit amet</dt>
+							<dd>- Consectetuer adipiscing elit</dd>
+							<dt>Pellentesque habitant morbi tristique senectus</dt>
+							<dd>- Et netus et malesuada fames ac turpis</dd>
+						</dl>
+ 					</div>
+				</div>
+				
 				<h3 class="page-header">Blockquote Typography </h3>
 					<blockquote>
 						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus magna. Cras in mi at felis aliquet congue. Ut a est eget ligula molestie gravida. Curabitur
 						massa. Donec eleifend, libero at sagittis mollis,.</p>
-						<cite>Lorem ipsum dolor sit amet</cite>
+						<cite><strong><em>- Lorem ipsum dolor sit amet</em></strong></cite>
 					</blockquote>
 			</div>
 		</div> 
@@ -135,24 +148,34 @@
 			<div class="col-xs-12">
 				<h3 class="page-header">Gallery Plugin</h3>
 			</div>
- 			<div class="col-md-3">
+ 			<div class="col-md-2 col-sm-4 col-xs-6 voffset1">
 				<a href="http://41.media.tumblr.com/f37ac708134914c471073e4c0b47328d/tumblr_mrn3dc10Wa1r1thfzo8_1280.jpg" data-toggle="lightbox" data-gallery="multiimages" data-title="People walking down stairs">
-				    <img src="http://41.media.tumblr.com/f37ac708134914c471073e4c0b47328d/tumblr_mrn3dc10Wa1r1thfzo8_1280.jpg" class="img-responsive">
+				    <img class="img-responsive img-rounded center-block" src="http://41.media.tumblr.com/f37ac708134914c471073e4c0b47328d/tumblr_mrn3dc10Wa1r1thfzo8_1280.jpg" class="img-responsive">
 				</a>
 			</div>
-			<div class="col-md-3">
+			<div class="col-md-2 col-sm-4 col-xs-6 voffset1">
 				<a href="http://41.media.tumblr.com/838b44224e39c30cd43490deb11b919d/tumblr_mrn3dc10Wa1r1thfzo1_1280.jpg" data-toggle="lightbox" data-gallery="multiimages" data-title="Man getting wet">
-				    <img src="http://41.media.tumblr.com/838b44224e39c30cd43490deb11b919d/tumblr_mrn3dc10Wa1r1thfzo1_1280.jpg" class="img-responsive">
+				    <img class="img-responsive img-rounded center-block" src="http://41.media.tumblr.com/838b44224e39c30cd43490deb11b919d/tumblr_mrn3dc10Wa1r1thfzo1_1280.jpg" class="img-responsive">
 				</a>
 			</div>
-			<div class="col-md-3">
+			<div class="col-md-2 col-sm-4 col-xs-6 voffset1">
 			    <a href="http://41.media.tumblr.com/e06a3513b0b36843f54bee99aeac689a/tumblr_mrn3dc10Wa1r1thfzo2_1280.jpg" data-toggle="lightbox" data-gallery="multiimages" data-title="Someone lost their dress">
-			        <img src="http://41.media.tumblr.com/e06a3513b0b36843f54bee99aeac689a/tumblr_mrn3dc10Wa1r1thfzo2_1280.jpg" class="img-responsive">
+			        <img class="img-responsive img-rounded center-block" src="http://41.media.tumblr.com/e06a3513b0b36843f54bee99aeac689a/tumblr_mrn3dc10Wa1r1thfzo2_1280.jpg" class="img-responsive">
 			    </a>
 			</div>
-			<div class="col-md-3">
+			<div class="col-md-2 col-sm-4 col-xs-6 voffset1">
             	<a href="http://41.media.tumblr.com/9d3e6a9c89a856a2ad0be3ab4ca598b2/tumblr_mrn3dc10Wa1r1thfzo4_1280.jpg" data-toggle="lightbox" data-gallery="multiimages" data-footer="Big ass waterfall - footer instead of title">
-		            <img src="http://41.media.tumblr.com/9d3e6a9c89a856a2ad0be3ab4ca598b2/tumblr_mrn3dc10Wa1r1thfzo4_1280.jpg" class="img-responsive">
+		            <img class="img-responsive img-rounded center-block" src="http://41.media.tumblr.com/9d3e6a9c89a856a2ad0be3ab4ca598b2/tumblr_mrn3dc10Wa1r1thfzo4_1280.jpg" class="img-responsive">
+		        </a>
+			</div>
+			<div class="col-md-2 col-sm-4 col-xs-6 voffset1">
+            	<a href="http://40.media.tumblr.com/f9fcf4cae3468d96a324cae301c00998/tumblr_mrn3dc10Wa1r1thfzo3_1280.jpg" data-toggle="lightbox" data-gallery="multiimages" data-footer="Big ass waterfall - footer instead of title">
+		            <img class="img-responsive img-rounded center-block" src="http://40.media.tumblr.com/f9fcf4cae3468d96a324cae301c00998/tumblr_mrn3dc10Wa1r1thfzo3_1280.jpg" class="img-responsive">
+		        </a>
+			</div>
+			<div class="col-md-2 col-sm-4 col-xs-6 voffset1">
+            	<a href="http://36.media.tumblr.com/de356cd6570d7c26e73979467f296f67/tumblr_mrn3dc10Wa1r1thfzo6_1280.jpg" data-toggle="lightbox" data-gallery="multiimages" data-footer="Big ass waterfall - footer instead of title">
+		            <img class="img-responsive img-rounded center-block" src="http://36.media.tumblr.com/de356cd6570d7c26e73979467f296f67/tumblr_mrn3dc10Wa1r1thfzo6_1280.jpg" class="img-responsive">
 		        </a>
 			</div>
  		</div>
@@ -164,7 +187,7 @@
 	    	<div class="row">
 	        	<div class="col-xs-12">
 					<hr/>
-	           		<p>Starter Bootstrap Template 2016 |  Built with <a href="http://getbootstrap.com">Bootstrap</a>, <a href="http://fontawesome.io/">Font Awesome</a>, <a href="https://jquery.com/">Jquery</a></p>
+					<p>Starter Bootstrap Template 2016 |  Built with <a target="_blank" href="http://getbootstrap.com">Bootstrap</a>, <a target="_blank" href="http://fontawesome.io/">Font Awesome</a>, <a target="_blank" href="https://jquery.com/">Jquery</a>, <a target="_blank" href="https://github.com/ashleydw/lightbox">Lightbox Bootstrap 3</a></p>
 	        	</div>
 	    	</div>
 		</div>
