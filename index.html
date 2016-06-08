@@ -7,6 +7,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<meta name="author" content="https://github.com/jvining">
 	<meta name="description" content=" An HTML Template using Bootstrap, Jquery, Lightbox Bootstrap 3, &amp; Google WebFonts. All Called in from CDNs, so this document is available for immediate use">
+	<link rel="apple-touch-icon" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAIAAAACACAYAAADDPmHLAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAyJpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMC1jMDYwIDYxLjEzNDc3NywgMjAxMC8wMi8xMi0xNzozMjowMCAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENTNSBNYWNpbnRvc2giIHhtcE1NOkluc3RhbmNlSUQ9InhtcC5paWQ6OUVEQTlCMzMyNTM1MTFFNkJDOEZBOURCRjI4MkY0RTgiIHhtcE1NOkRvY3VtZW50SUQ9InhtcC5kaWQ6OUVEQTlCMzQyNTM1MTFFNkJDOEZBOURCRjI4MkY0RTgiPiA8eG1wTU06RGVyaXZlZEZyb20gc3RSZWY6aW5zdGFuY2VJRD0ieG1wLmlpZDo5RURBOUIzMTI1MzUxMUU2QkM4RkE5REJGMjgyRjRFOCIgc3RSZWY6ZG9jdW1lbnRJRD0ieG1wLmRpZDo5RURBOUIzMjI1MzUxMUU2QkM4RkE5REJGMjgyRjRFOCIvPiA8L3JkZjpEZXNjcmlwdGlvbj4gPC9yZGY6UkRGPiA8L3g6eG1wbWV0YT4gPD94cGFja2V0IGVuZD0iciI/PhgQb9IAAAzCSURBVHja7F0LUIxr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">
 
 	<!-- Bootstrap CDN -->
 	<link href="http://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css" rel="stylesheet" type="text/css">
@@ -20,12 +21,10 @@
 		h1,h2,h3,h4,h5{font-weight:300;}
 		[class*="col-"]{color:#5f5f5f;}
 
-		.voffset{margin-top: .2em;}  .voffset0{margin-top: .5em}
-		.voffset1{margin-top: 1em;}  .voffset2{margin-top: 2em;} 
-		.voffset3{margin-top: 3em;}  .voffset4{margin-top: 4em;} 
-		.voffset5{margin-top: 5em;}  .voffset6{margin-top: 6em;}
-		.voffset7{margin-top: 7em;}  .voffset8{margin-top: 8em;}
-		.voffset9{margin-top: 9em;}  .voffsetx{margin-top:10em;}
+		.voffset{margin-top: .2em;} .voffset0{margin-top: .5em} .voffset1{margin-top: 1em;}  
+		.voffset2{margin-top: 2em;} .voffset3{margin-top: 3em;} .voffset4{margin-top: 4em;} 
+		.voffset5{margin-top: 5em;} .voffset6{margin-top: 6em;} .voffset7{margin-top: 7em;}
+		.voffset8{margin-top: 8em;}	.voffset9{margin-top: 9em;} .voffsetx{margin-top:10em;}
  
 		footer{margin: 50px 0;}
 
@@ -188,7 +187,6 @@
 			</div>
  		</div>
 	</div> 
-	<!-- END container -->
 
 	<footer>
 		<div class="container">
@@ -211,5 +209,92 @@
 	    $(this).ekkoLightbox();
 	}); 
 </script>
+        <script src="http://connect.facebook.net/en_US/all.js"></script>
+
+        <script type="text/javascript">
+            var loggedIn = false;        
+
+            function loginFacebook() 
+            {
+                //initializes the facebook API
+            }        
+
+
+
+
+            function loadAlbums()
+            {            
+                 FB.init({
+            appId  : '345203265493024',
+            status : true, // check login status
+            cookie : true, // enable cookies to allow the server to access the session
+            xfbml  : true  // parse XFBML
+              });
+
+
+
+
+
+FB.login(function(response)
+{
+if (response.authResponse)
+ {
+
+//Logged in and accepted permissions!
+
+       document.getElementById("status").innerHTML = "Getting album information from your Facebook profile";
+                var counter = 0;
+
+      // Start Normal API
+                FB.api('/me/albums', function(response) 
+                {
+
+
+                  var d=response.data;
+
+
+
+                  for (var i=0, l=d.length; i<l; i++)
+                    {
+                        addOption(response["data"][i].name,response["data"][i].id);
+                        counter++;
+
+
+                    }
+                    document.getElementById("status").innerHTML = "There are "+ counter +" albums in your Facebook profile";
+                });
+
+
+                 //end of  Normal API
+
+        document.getElementById("albumBtn").style.visibility="hidden";   
+
+
+
+}
+},{scope:'read_stream,publish_stream,offline_access,user_photos,friends_photos,user_photo_video_tags,friends_photo_video_tags'});
+
+
+            }
+
+            //Adds a new option into the drop down box
+            function addOption(opText,opVal) 
+            {
+                var v = document.getElementById("albumsList");             
+                v.innerHTML += '<br/><a  href="facebookphotos.aspx?album='+opVal+'&name='+opText+'">'+opText+'</a>';               
+            }
+
+            function init() 
+            {
+                var v1 = document.getElementById("albumBtn");
+                v1.onclick = loadAlbums;
+                // v1.style.visibility= "hidden";             
+            }
+
+            //calls init function once all the resources are loaded
+            window.addEventListener("load",init,true);
+        </script>      
+
+
 </body>
 </html>
